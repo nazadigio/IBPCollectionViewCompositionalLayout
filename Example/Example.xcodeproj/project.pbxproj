@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -542,8 +542,9 @@
 		143A2D8622F9D00200F8904D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Kishikawa Katsumi";
 				TargetAttributes = {
 					143A2D8D22F9D00200F8904D = {
@@ -738,10 +739,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1423553A231475BF000884C0 /* Example.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LRE923483J;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.IBPCollectionViewCompositionalLayout.ExampleLRE923483J;
 			};
 			name = Debug;
 		};
@@ -749,10 +752,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1423553A231475BF000884C0 /* Example.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LRE923483J;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.IBPCollectionViewCompositionalLayout.ExampleLRE923483J;
 			};
 			name = Release;
 		};

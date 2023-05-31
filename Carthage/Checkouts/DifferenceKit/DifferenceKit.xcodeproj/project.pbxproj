@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -214,8 +214,9 @@
 		6B2DF865210E2C12004D2D40 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Ryo Aoyama";
 				TargetAttributes = {
 					6B2DF86D210E2C12004D2D40 = {

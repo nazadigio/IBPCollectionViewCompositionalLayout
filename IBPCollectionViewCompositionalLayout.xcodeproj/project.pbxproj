@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -490,8 +490,9 @@
 		143A2CF422F9C81D00F8904D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Kishikawa Katsumi";
 				TargetAttributes = {
 					143A2CFC22F9C81D00F8904D = {
@@ -634,6 +635,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 142355262313499B000884C0 /* Project-Debug.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -641,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1423552D2313499B000884C0 /* Project-Release.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
@@ -648,6 +651,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 142355292313499B000884C0 /* IBPCollectionViewCompositionalLayout.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LRE923483J;
+				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.IBPCollectionViewCompositionalLayout;
 			};
 			name = Debug;
 		};
@@ -655,6 +660,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 142355292313499B000884C0 /* IBPCollectionViewCompositionalLayout.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LRE923483J;
+				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.IBPCollectionViewCompositionalLayout;
 			};
 			name = Release;
 		};
@@ -662,6 +669,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 142355282313499B000884C0 /* IBPCollectionViewCompositionalLayoutTests.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LRE923483J;
+				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.IBPCollectionViewCompositionalLayoutTests;
 			};
 			name = Debug;
 		};
@@ -669,6 +678,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 142355282313499B000884C0 /* IBPCollectionViewCompositionalLayoutTests.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LRE923483J;
+				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.IBPCollectionViewCompositionalLayoutTests;
 			};
 			name = Release;
 		};
@@ -676,6 +687,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14B9587F23B8EDEE00DF3B7F /* HostApp-Debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LRE923483J;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.HostApp;
 			};
 			name = Debug;
 		};
@@ -683,6 +697,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14B9588023B8EDEE00DF3B7F /* HostApp-Release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LRE923483J;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.HostApp;
 			};
 			name = Release;
 		};
