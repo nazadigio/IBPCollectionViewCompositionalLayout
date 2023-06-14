@@ -566,6 +566,11 @@
     }
     
     [self prepareLayoutHeaderForCollectionView:collectionView withContainer:collectionContainer isOnTop:NO];
+    
+    if (collectionView.collectionViewLayout == self && !self.collectionViewDelegate && collectionView.delegate != self) {
+        self.collectionViewDelegate = collectionView.delegate;
+        collectionView.delegate = self;
+    }
 }
 
 - (UICollectionView *)setupOrthogonalScrollViewForSection:(IBPNSCollectionLayoutSection *)section {
@@ -1006,6 +1011,15 @@
             CGPoint contentOffset = CGPointZero;
             contentOffset.x += -scrollView.adjustedContentInset.left;
             scrollView.contentOffset = contentOffset;
+        }
+        scrollView.delegate = self.collectionViewDelegate;
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView == self.collectionView) {
+        if ([self respondsToSelector:@selector(scrollViewDidScroll:)]) {
+            [self.collectionViewDelegate scrollViewDidScroll:scrollView];
         }
         scrollView.delegate = self.collectionViewDelegate;
     }
