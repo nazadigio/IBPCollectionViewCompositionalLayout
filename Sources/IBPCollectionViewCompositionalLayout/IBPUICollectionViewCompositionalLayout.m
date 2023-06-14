@@ -566,11 +566,6 @@
     }
     
     [self prepareLayoutHeaderForCollectionView:collectionView withContainer:collectionContainer isOnTop:NO];
-    
-    if (collectionView.collectionViewLayout == self && !self.collectionViewDelegate && collectionView.delegate != self) {
-        self.collectionViewDelegate = collectionView.delegate;
-        collectionView.delegate = self;
-    }
 }
 
 - (UICollectionView *)setupOrthogonalScrollViewForSection:(IBPNSCollectionLayoutSection *)section {
