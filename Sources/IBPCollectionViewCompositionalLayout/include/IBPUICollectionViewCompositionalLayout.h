@@ -22,6 +22,12 @@ typedef IBPNSCollectionLayoutSection * _Nullable (^IBPUICollectionViewCompositio
 - (instancetype)initWithSectionProvider:(IBPUICollectionViewCompositionalLayoutSectionProvider)sectionProvider
                           configuration:(IBPUICollectionViewCompositionalLayoutConfiguration *)configuration;
 
+- (instancetype)initLayoutClass:(Class)layoutClass
+                sectionProvider:(IBPUICollectionViewCompositionalLayoutSectionProvider)sectionProvider
+                  configuration:(IBPUICollectionViewCompositionalLayoutConfiguration *)configuration;
+
+- (void)removeLayoutAttributesForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
 

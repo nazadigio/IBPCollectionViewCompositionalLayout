@@ -83,6 +83,17 @@
     }
 }
 
+- (instancetype)initLayoutClass:(Class)layoutClass
+                sectionProvider:(IBPUICollectionViewCompositionalLayoutSectionProvider)sectionProvider
+                  configuration:(IBPUICollectionViewCompositionalLayoutConfiguration *)configuration {
+    if (@available(iOS 13, *)) {
+        Class class = layoutClass ?: NSClassFromString(@"UICollectionViewCompositionalLayout");
+        return [[class alloc] initWithSectionProvider:sectionProvider configuration:configuration];
+    } else {
+        return [self initWithSection:nil sectionProvider:sectionProvider configuration:configuration];
+    }
+}
+
 - (instancetype)initWithSection:(IBPNSCollectionLayoutSection *)section
                 sectionProvider:(IBPUICollectionViewCompositionalLayoutSectionProvider)sectionProvider
                   configuration:(IBPUICollectionViewCompositionalLayoutConfiguration *)configuration {
@@ -915,6 +926,10 @@
         case IBPUICollectionLayoutSectionOrthogonalScrollingBehaviorPaging:
             return [super targetContentOffsetForProposedContentOffset:proposedContentOffset withScrollingVelocity:velocity];
     }
+}
+
+- (void)removeLayoutAttributesForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath {
+    [cachedItemAttributes removeObjectForKey:indexPath];
 }
 
 - (CGPoint)orthogonalContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset

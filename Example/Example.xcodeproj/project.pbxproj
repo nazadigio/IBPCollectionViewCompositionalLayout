@@ -739,12 +739,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1423553A231475BF000884C0 /* Example.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = LRE923483J;
+				DEVELOPMENT_TEAM = GXW5YSU35M;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.IBPCollectionViewCompositionalLayout.ExampleLRE923483J;
+				PRODUCT_BUNDLE_IDENTIFIER = ivoox.com.kishikawakatsumi.IBPCollectionViewCompositionalLayout.ExampleLRE923483J;
 			};
 			name = Debug;
 		};
@@ -752,12 +752,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1423553A231475BF000884C0 /* Example.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = LRE923483J;
+				DEVELOPMENT_TEAM = GXW5YSU35M;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = digio.com.kishikawakatsumi.IBPCollectionViewCompositionalLayout.ExampleLRE923483J;
+				PRODUCT_BUNDLE_IDENTIFIER = ivoox.com.kishikawakatsumi.IBPCollectionViewCompositionalLayout.ExampleLRE923483J;
 			};
 			name = Release;
 		};
